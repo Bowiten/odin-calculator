@@ -39,3 +39,10 @@ function operate(num1, operator, num2) {
 function populateDisplayResult(digit) {
     displayResult.innerText += digit;
 }
+
+function clearCalc() {
+    displayResult.innerText = '';
+    num1 = 0;
+    operator = '';
+    num2 = 0;
+}
