@@ -6,6 +6,11 @@ body {
     margin: 0;
 }
 
+button {
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
 .calculator {
     display: flex;
     flex-direction: column;
@@ -14,6 +19,7 @@ body {
     width: 230px;
     padding: 20px;
     border: 2px solid black;
+    border-radius: 5px;
     gap: 10px;
 }
 
@@ -23,6 +29,7 @@ body {
 
 .display {
     border: 2px solid black;
+    border-radius: 5px;
     box-sizing: border-box;
     height: 80px;
     width: 230px;
