@@ -35,3 +35,7 @@ function operate(num1, operator, num2) {
             return 'Error';
     }
 }
+
+function populateDisplayResult(digit) {
+    displayResult.innerText += digit;
+}
