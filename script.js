@@ -46,3 +46,7 @@ function clearCalc() {
     operator = '';
     num2 = 0;
 }
+
+function changeSign() {
+    displayResult.innerText = parseFloat(displayResult.innerText) * -1;
+}
