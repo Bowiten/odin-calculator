@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 380px;
+    width: 230px;
+    padding: 20px;
+    border: 2px solid black;
+    gap: 10px;
+}
+
+.calculator div {
+    display: flex;
+}
+
+.display {
+    border: 2px solid black;
+    box-sizing: border-box;
+    height: 80px;
+    width: 230px;
+    flex-shrink: 0; 
+}
+
+.delete-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.delete-buttons button {
+    padding: 0;
+    height: 50px;
+    width: 110px;
+}
+
+.main-buttons {
+    display: flex;
+    height: 330px;
+    gap: 10px;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.numbers button {
+    height: 50px;
+    width: 50px;
+}
+
+.operations {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.operations button {
+    width: 50px;
+    flex: 1;
+}
