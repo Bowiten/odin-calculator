@@ -17,7 +17,7 @@ const multiply = function() {
 }
 
 const divide = function() {
-    return (num2 != 0 ? num1 / num2 : `You can't divide by zero!`);
+    return (num2 != 0 ? num1 / num2 : `Error`);
 }
 
 function operate(num1, operator, num2) {
