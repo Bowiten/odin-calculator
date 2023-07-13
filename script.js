@@ -34,6 +34,6 @@ function operate(num1, operator, num2) {
 }
 
 function addDigit(digit) {
-    if (displayResult.innerText.length < 10)
-        displayResult.innerText += digit;
+    if (displayResult.textContent.length < 10)
+        displayResult.textContent += digit;
 }
