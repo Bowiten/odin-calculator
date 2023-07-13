@@ -1,4 +1,4 @@
-const displayResult = document.querySelector('.result').textContent;
+const displayResult = document.querySelector('.result');
 
 let num1 = 0;
 let operator = '';
@@ -34,6 +34,6 @@ function operate(num1, operator, num2) {
 }
 
 function addDigit(digit) {
-    if (displayResult.length < 10)
-        displayResult += digit;
+    if (displayResult.textContent.length < 10)
+        displayResult.textContent += digit;
 }
