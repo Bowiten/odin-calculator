@@ -1,4 +1,5 @@
 const displayResult = document.querySelector('.result');
+const digitButtons = document.querySelectorAll('.digit');
 
 let num1 = 0;
 let operator = '';
@@ -41,3 +42,7 @@ function addDigit(digit) {
 function updateDisplay(number) {
     displayResult.textContent = number;
 }
+
+digitButtons.forEach(button => button.addEventListener('click', () => {
+    addDigit(button.textContent);
+}));
