@@ -1,3 +1,5 @@
+const displayResult = document.querySelector('.result');
+
 let num1 = 0;
 let operator = '';
 let num2 = 0;
@@ -29,4 +31,9 @@ function operate(num1, operator, num2) {
         case '/':
             return divide;
     }
+}
+
+function populateDisplay(digit) {
+    if (displayResult.innerText.length < 10)
+        displayResult.innerText += digit;
 }
