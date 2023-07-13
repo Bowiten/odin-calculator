@@ -34,13 +34,13 @@ function operate() {
     }
 }
 
+function updateDisplay(number) {
+    displayResult.textContent = number;
+}
+
 function addDigit(digit) {
     if (displayResult.textContent.length < 10)
         displayResult.textContent += digit;
-}
-
-function updateDisplay(number) {
-    displayResult.textContent = number;
 }
 
 digitButtons.forEach(button => button.addEventListener('click', () => {
