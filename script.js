@@ -33,7 +33,7 @@ function operate(num1, operator, num2) {
     }
 }
 
-function populateDisplay(digit) {
+function addDigit(digit) {
     if (displayResult.innerText.length < 10)
         displayResult.innerText += digit;
 }
