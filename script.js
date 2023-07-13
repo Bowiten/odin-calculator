@@ -56,7 +56,7 @@ function execOperation(operation) {
     if (operator == '') {
         num1 = parseFloat(displayResult.textContent);
         operator = operation;
-        updateDisplay('');
+        clearOnNextInput = true;
     } else {
         num2 = parseFloat(displayResult.textContent);
         result = operate();
