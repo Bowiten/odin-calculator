@@ -1,7 +1,8 @@
 const displayResult = document.querySelector('.result');
 const digitButtons = document.querySelectorAll('.digit');
 const operationButtons = document.querySelectorAll('.operation');
-const evalButton = document.querySelector('.eval')
+const evalButton = document.querySelector('.eval');
+const signButton = document.querySelector('.sign');
 
 let num1 = 0;
 let operator = '';
@@ -78,6 +79,12 @@ function evaluate() {
     num1 = haha;
 }
 
+function changeSign() {
+    if (displayResult == '')
+        return;
+    updateDisplay(-1 * parseFloat(displayResult.textContent));
+}
+
 digitButtons.forEach(button => button.addEventListener('click', () => {
     addDigit(button.textContent);
 }));
@@ -87,3 +94,5 @@ operationButtons.forEach(button => button.addEventListener('click', () => {
 }))
 
 evalButton.addEventListener('click', () => evaluate());
+
+signButton.addEventListener('click', () => changeSign());
