@@ -81,11 +81,11 @@ function evaluate() {
     if (operator == '')
         return;
     num2 = parseFloat(displayResult.textContent);
-    haha = operate();
-    updateDisplay(haha);
+    result = operate();
+    updateDisplay(result);
     clearOnNextInput = true;
     num2 = 0;
-    num1 = haha;
+    num1 = result;
 }
 
 function changeSign() {
