@@ -7,7 +7,7 @@ const signButton = document.querySelector('.sign');
 let num1 = 0;
 let operator = '';
 let num2 = 0;
-let clearOnNextInput = false;
+let clearOnNextInput = true;
 
 function add() {
     return num1 + num2;
