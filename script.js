@@ -27,16 +27,18 @@ function divide() {
 }
 
 function operate() {
+    let result = 0;
     switch (operator) {
         case '+':
-            return add();
+            result = add();
         case '-':
-            return subtract();
+            result = subtract();
         case '*':
-            return multiply();
+            result = multiply();
         case '/':
-            return divide();
+            result = divide();
     }
+    return (Math.round(result * 100) / 100);
 }
 
 function updateDisplay(number) {
