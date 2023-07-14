@@ -11,33 +11,33 @@
     <div class="calculator">
         <div class="display">
             <p class="prev-operations"></p>
-            <p class="result"></p>
+            <p class="result">0</p>
         </div>
         <div class="delete-buttons">
-            <button onclick="clearCalc()">Clear</button>
-            <button>Delete</button>
+            <button class="clear">Clear</button>
+            <button class="delete">Delete</button>
         </div>
         <div class="main-buttons">
             <div class="numbers">
-                <button onclick="populateDisplayResult(this.outerText)">1</button>
-                <button onclick="populateDisplayResult(this.outerText)">2</button>
-                <button onclick="populateDisplayResult(this.outerText)">3</button>
-                <button onclick="populateDisplayResult(this.outerText)">4</button>
-                <button onclick="populateDisplayResult(this.outerText)">5</button>
-                <button onclick="populateDisplayResult(this.outerText)">6</button>
-                <button onclick="populateDisplayResult(this.outerText)">7</button>
-                <button onclick="populateDisplayResult(this.outerText)">8</button>
-                <button onclick="populateDisplayResult(this.outerText)">9</button>
-                <button onclick="populateDisplayResult(this.outerText)">0</button>
-                <button>.</button>
-                <button onclick="changeSign()">-/+</button>
+                <button class="digit">1</button>
+                <button class="digit">2</button>
+                <button class="digit">3</button>
+                <button class="digit">4</button>
+                <button class="digit">5</button>
+                <button class="digit">6</button>
+                <button class="digit">7</button>
+                <button class="digit">8</button>
+                <button class="digit">9</button>
+                <button class="digit">0</button>
+                <button class="decimal">.</button>
+                <button class="sign">-/+</button>
             </div>
             <div class="operations">
-                <button>+</button>
-                <button>-</button>
-                <button>*</button>
-                <button>/</button>
-                <button>=</button>
+                <button class="operation">+</button>
+                <button class="operation">-</button>
+                <button class="operation">*</button>
+                <button class="operation">/</button>
+                <button class="eval">=</button>
             </div>
         </div>
     </div>
